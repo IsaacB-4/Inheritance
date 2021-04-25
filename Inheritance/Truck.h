@@ -9,15 +9,11 @@ protected:
 public:
 	//Default constructor
 	Truck() : Vehicle()
-	{
-		capacity = 0;
-	}
+	{ capacity = 0; }
 
 	//Constructor
 	Truck(string m, int y, int d) : Vehicle(m, y)
-	{
-		capacity = d;
-	}
+	{ capacity = d; }
 
 	//Prints the contents of the object
 	void displayInfo();
