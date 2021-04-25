@@ -4,6 +4,7 @@
 
 #include "Vehicle.h"
 #include "Car.h"
+#include "Truck.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -31,4 +32,16 @@ int main()
 	cout << "Enter the number of doors: "; cin >> doors;
 	Car car(manufacturer, year, doors);
 	car.displayInfo();
+
+	//Truck driver
+	int capacity;
+
+	cout << "\nTruck:\n";
+	cout << "Enter the manufacturer: "; cin >> ws; getline(cin, manufacturer);
+	cout << "Enter the year built: "; cin >> year;
+	cout << "Enter the towing capacity: "; cin >> capacity;
+	Truck truck(manufacturer, year, capacity);
+	truck.displayInfo();
+
+	return 0;
 }
